@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cats!</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header><h1>Vote on all the kitties!</h1></header>
+    <main>
+    <h2>Does this cat make you smile? </h2>
+
+    <div id="vote-options" class="vote-options">
+        <button onClick="vote(1)">Vote Up </button>
+        <button onClick="vote(-1)">Vote Down </button>
+        <button onClick="showHistoricVotes()">History </button>
+          
+      <div>
+        <img id="image-to-vote-on" class="col-lg"></img>
+        </div>
+        
+        </div>
+      
+        <div id="vote-results"  class="vote-results">
+        <button onClick="showVoteOptions()">Show Vote Options</button>
+          <div id="grid" class="imgrid"/>
+       </div>
+       <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+       <script src="script.js"></script>
+       <script src="ab.js" ></script>
+       <script src="im.js"></script>
+       <script src="ub.js"></script>
+      </body>
+      </html>
+
+      
