@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Cats!</title>
+    <title>Vote on Cats!</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
@@ -13,27 +14,30 @@
     <main>
     <h2>Does this cat make you smile? </h2>
 
-    <div id="vote-options" class="vote-options">
-        <button onClick="vote(1)">Vote Up </button>
-        <button onClick="vote(-1)">Vote Down </button>
-        <button onClick="showHistoricVotes()">History </button>
-          
-      <div>
-        <img id="image-to-vote-on" class="col-lg"></img>
-        </div>
-        
-        </div>
-      
-        <div id="vote-results"  class="vote-results">
-        <button onClick="showVoteOptions()">Show Vote Options</button>
-          <div id="grid" class="imgrid"/>
-       </div>
-       <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-       <script src="script.js"></script>
-       <script src="ab.js" ></script>
-       <script src="im.js"></script>
-       <script src="ub.js"></script>
-      </body>
-      </html>
+  <div id="vote-options" class="vote-options">
+  <button onClick="vote(1)">Vote Up </button>
+  <button onClick="vote(-1)">Vote Down </button>
+  <button onClick="showHistoricVotes()">History </button>
+    
+<div id="cat-container">
+  <img id="image-to-vote-on" class="col-lg"></img>
+  </div>
+  
+  </div>
 
-      
+  <div id="vote-results"  class="vote-results">
+  <button onClick="showVoteOptions()">Show Vote Options</button>
+    <div id="grid" class="imgrid"/>
+ </div>
+    </main>
+ <footer>
+    <p>Click on Show Vote Options to vote on a kitty!</p>
+  </footer>
+ <!-- Axios -->
+ <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+ <script src="script.js"></script>
+ <script src="update.js"></script>
+ <script src="image.js"></script>
+ <script src="CatImages.js"></script>
+</body>
+</html>

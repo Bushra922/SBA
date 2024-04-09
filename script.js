@@ -1,5 +1,5 @@
 const API_URL = `https://api.thecatapi.com/v1/`;
-const API_KEY = "live_UW3L8WqHJhzEZuOnpLzoVH3Ir3DIYguzwt7nxlizqhEsKIkM6hjWK22GxrIk4XHt";
+const API_KEY = "live_YqVyhl2GF1L7487yPTOY5EJHZCgpXotwqzQcjLrwzRXRdWYYvtpXQcXATD5WRGKz";
 
 let currentImageToVoteOn;
 
@@ -83,4 +83,15 @@ async function vote(value) {
   } catch (error) {
     console.log(error);
   }
+}
+
+function displayGallery(images) {
+    const gallery = document.getElementById('gallery');
+    gallery.innerHTML = '';
+    images.forEach(image => {
+        const img = document.createElement('img');
+        img.src = image.url;
+        img.alt = 'Cat';
+        gallery.appendChild(img);
+    });
 }
